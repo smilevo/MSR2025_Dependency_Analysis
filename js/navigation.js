@@ -8,6 +8,7 @@ $('.home').on('click', function() {
        $('#about').hide();
        $('#download').hide();
        $('#details').hide();
+       $('#protection').hide();
        $('#support').hide();
        $('#contribute').hide();
        $('#cite').hide();
@@ -20,6 +21,7 @@ $('.about').on('click', function() {
        $('#about').show();
        $('#download').hide();
        $('#details').hide();
+       $('#protection').hide();
        $('#support').hide();
        $('#contribute').hide();
        $('#cite').hide();
@@ -32,6 +34,7 @@ $('.download').on('click', function() {
        $('#about').hide();
        $('#download').show();
        $('#details').hide();
+       $('#protection').hide();
        $('#support').hide();
        $('#contribute').hide();
        $('#cite').hide();
@@ -44,6 +47,20 @@ $('.details').on('click', function() {
        $('#about').hide();
        $('#download').hide();
        $('#details').show();
+       $('#protection').hide();
+       $('#support').hide();
+       $('#contribute').hide();
+       $('#cite').hide();
+       $('#publications').hide();
+       $('#contact').hide();
+});
+
+$('.protection').on('click', function() {
+       $('#home').hide();
+       $('#about').hide();
+       $('#download').hide();
+       $('#details').hide();
+       $('#protection').show();
        $('#support').hide();
        $('#contribute').hide();
        $('#cite').hide();
@@ -56,6 +73,7 @@ $('.support').on('click', function() {
        $('#about').hide();
        $('#download').hide();
        $('#details').hide();
+       $('#protection').hide();
        $('#support').show();
        $('#contribute').hide();
        $('#cite').hide();
@@ -68,6 +86,7 @@ $('.contribute').on('click', function() {
        $('#about').hide();
        $('#download').hide();
        $('#details').hide();
+       $('#protection').hide();
        $('#support').hide();
        $('#contribute').show();
        $('#cite').hide();
@@ -80,6 +99,7 @@ $('.cite').on('click', function() {
        $('#about').hide();
        $('#download').hide();
        $('#details').hide();
+       $('#protection').hide();
        $('#support').hide();
        $('#contribute').hide();
        $('#cite').show();
@@ -92,6 +112,7 @@ $('.publications').on('click', function() {
        $('#about').hide();
        $('#download').hide();
        $('#details').hide();
+       $('#protection').hide();
        $('#support').hide();
        $('#contribute').hide();
        $('#cite').hide();
@@ -104,6 +125,7 @@ $('.contact').on('click', function() {
        $('#about').hide();
        $('#download').hide();
        $('#details').hide();
+       $('#protection').hide();
        $('#support').hide();
        $('#contribute').hide();
        $('#cite').hide();
