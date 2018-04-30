@@ -1,0 +1,75 @@
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+.tg .tg-88nc{font-weight:bold;border-color:inherit;text-align:center}
+.tg .tg-8m2u{font-weight:bold;border-color:inherit}
+.tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-quj4{border-color:inherit;text-align:right}
+.tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
+</style>
+<table class="tg">
+<tr>
+<th class="tg-8m2u">Systems</th>
+<th class="tg-88nc">Time Span<br></th>
+<th class="tg-7btt">#Reviews</th>
+<th class="tg-7btt">#Revisions<br></th>
+<th class="tg-7btt">Language</th>
+</tr>
+<tr>
+<td class="tg-8m2u">egit</td>
+<td class="tg-quj4">Oct-09 to Nov-17</td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl">Java</td>
+</tr>
+<tr>
+<td class="tg-8m2u">jgit<br></td>
+<td class="tg-quj4">Sep-09 to Nov-17</td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl">Java</td>
+</tr>
+<tr>
+<td class="tg-8m2u">linuxtools</td>
+<td class="tg-quj4">Jun-12 to Nov-17</td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl">Java</td>
+</tr>
+<tr>
+<td class="tg-8m2u">platform.ui</td>
+<td class="tg-quj4">Feb-13 to Nov-17</td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl">Java</td>
+</tr>
+<tr>
+<td class="tg-8m2u">ns_server</td>
+<td class="tg-quj4">Apr-10 to Nov-17</td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl">JavaScript<br></td>
+</tr>
+<tr>
+<td class="tg-8m2u">testrunner</td>
+<td class="tg-quj4">Oct-10 to Apr-16</td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl">Python</td>
+</tr>
+<tr>
+<td class="tg-8m2u">ep-engine</td>
+<td class="tg-quj4">Feb-11 to Nov-17</td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl">C++</td>
+</tr>
+<tr>
+<td class="tg-8m2u">indexing</td>
+<td class="tg-quj4">Mar-14 to Nov-17</td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl"></td>
+<td class="tg-dvpl">Go</td>
+</tr>
+</table>

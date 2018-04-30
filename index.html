@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en-US">
+   <head>
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115826132-1"></script>
@@ -11,129 +12,460 @@ gtag('js', new Date());
 gtag('config', 'UA-115826132-1');
 </script>
 
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Code Review Open Platform</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">  
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+   </head>
+   <body class="size-1280">
+      <!-- TOP NAV WITH LOGO -->
+      <header>
+         <nav>
+            <div class="line">
+               <div class="s-12 l-2">
+                  <a href="index.html"><img class="s-5 center" src="img/crop.png"></a>
+               </div>
+               <div class="top-nav s-12 l-10 right">
+                  <p class="nav-text">Menu</p>
+                  <ul class="right">
+                        <li><a class="home">Home</a></li>
+                        <li><a class="about">About</a></li>
+                        <li><a class="download">Download</a></li>
+                        <li><a class="details">Details</a></li>
+                        <li><a class="support">Support</a></li>
+                        <li><a class="contribute">Join</a></li>
+                        <li><a class="cite">Cite</a></li>
+                        <li><a class="publications">Publications</a></li>
+                        <li><a class="contact">Contact</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <!-- ASIDE NAV AND CONTENT -->
+      <div class="line">
+         <div class="box  margin-bottom">
+            <div class="margin2x">
+               <!-- ASIDE NAV 1 -->
+               <aside class="s-12 l-3">
+                  <div class="aside-nav">
+                     <ul>
+                        <li><a class="home">Home</a></li>
+                        <li><a class="about">About</a></li>
+                        <li><a class="download">Download</a></li>
+                        <li><a class="details">Dataset Details</a></li>
+                        <li><a class="support">Support</a></li>
+                        <li><a class="contribute">Join the CROP</a></li>
+                        <li><a class="cite">Cite CROP</a></li>
+                        <li><a class="publications">Publications</a></li>
+                        <li><a class="contact">Contact</a></li>
+                        <!--<li>-->
+                           <!--<a>Product</a>-->
+                           <!--<ul>-->
+                              <!--<li><a>Product 1</a></li>-->
+                              <!--<li><a>Product 2</a></li>-->
+                              <!--<li>-->
+                                 <!--<a>Product 3</a>-->
+                                 <!--<ul>-->
+                                    <!--<li><a>Product 3-1</a></li>-->
+                                    <!--<li><a>Product 3-2</a></li>-->
+                                    <!--<li><a>Product 3-3</a></li>-->
+                                 <!--</ul>-->
+                              <!--</li>-->
+                           <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li>-->
+                           <!--<a>Company</a>-->
+                           <!--<ul>-->
+                              <!--<li><a>About</a></li>-->
+                              <!--<li><a>Location</a></li>-->
+                           <!--</ul>-->
+                        <!--</li>-->
+                     </ul>
+                  </div>
+               </aside>
+               <!-- CONTENT -->
 
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+               <div id="home">
+               <section class="s-12 l-6">
+                  <h2>Welcome</h2>
+                  <p>
+                     This website is for the Code Review Open Platform (CROP).
+                  </p><br>
+                  <p>
+                     CROP is an open source dataset of code review data intended for supporting software engineering researchers and practitioners.
+                     For each software system in CROP, we link code review data to complete versions of the system's code base at the time of review.
+                     CROP currently provides data for <b>11 software systems</b>, accounting for a total of <b>50,959 code reviews</b> and <b>144,906 revisions</b>.
+                  </p><br>
+                  <p>
+                     Here you can find useful information, such as how to <a href="#download" class="download">download the dataset</a>, 
+                     <a href="#support" class="support">find support</a> and <a href="#structure" class="structure">understand the dataset.</a>
+                  </p><br>
+                  <h2>News</h2>
+                  <h3>CROP to be presented at MSR'2018</h3>
+                  <p>
+                     <i>16/04/2018</i>
+                  </p><br>
+                  <p>
+                     We are happy to announce that the CROP dataset paper has been accepted for publication at the 2018th edition of the 
+                     <a href="https://conf.researchr.org/home/msr-2018" target=_blank">International Conference on Mining Software Repositories.</a>
+                     MSR'18 will be held in beautiful Gothenburg from the 28th to the 29th of May.
+                  </p><br>
+                  <img src="img/gothenburg.jpeg"><br>
+                  <p>
+                     The CROP paper will be presented by our main contributor, <a href="http://www0.cs.ucl.ac.uk/staff/m.paixao/" target=_blank">Matheus Paixao</a>,
+                     in the Data showcase session, on the 29th of May.
+                  </p><br>
+               </section>
+               </div>
 
-    <title>Code Review Open Platform</title>
+               <div id="about">
+               <section class="s-12 l-6">
+                  <h3>About</h3>
+                  <p>
+                     The Code Review Open Platform, a.k.a. CROP, is an open source dataset of code review data. CROP collects code review information from open 
+                     source software systems and links this data to complete versions of the code base for each of these systems. CROP was first designed by 
+                     <a href="http://www0.cs.ucl.ac.uk/staff/m.paixao/" target="_blank">Matheus Paixao</a> as part of his PhD thesis in the 
+                     <a href="http://crest.cs.ucl.ac.uk/about/" target="_blank">CREST Centre</a> at University College London. 
+                     <a href="http://www0.cs.ucl.ac.uk/staff/j.krinke/" target="_blank">Dr. Jens Krinke</a>, <a href="https://donggyun.com/" target="_blank">Donggyun Han</a>
+                     and <a href="http://www0.cs.ucl.ac.uk/staff/M.Harman/" target="_blank">Prof. Mark Harman</a> have also contributed for the first incarnation of CROP.
+                  </p><br>
+                  <p>
+                     CROP collects code review information from open source software systems and links this data to complete versions of the code base for each of 
+                     these systems.
+                  </p><br>
+                  <p>
+                     Given a certain software system, CROP contains code review data and versions of the code base for each revision ever submitted for review, including
+                     intermediary revisions before merging and revisions that were even abandoned by the system's developers. Each version of the system represents a complete
+                     snapshot of the system's code base, in a way that each revision of the system is fully buildable, compilable and testable.
+                  </p><br>
+                  <p>
+                     By leveraging the data contained in CROP, software engineering researchers and practitioners can perform empirical studies to assess how effective
+                     the code review process is for different aspects of software development. Since CROP provides complete snapshots of the software system, these experiments
+                     can be enhanced by using a wide range of approaches for static and dynamic analysis.
+                  </p><br>
+                  <p>
+                     Moreover, during code review, developers are constantly providing reasoning and rationale for the changes they make in the system, both when they submit code 
+                     for review and when they inspect code from their peers. Thus, the data contained in CROP is a valuable source of knowledge regarding motivation for and explanation
+                     of software changes.
+                  </p><br>
+                  <p>
+                     All personal identifiable information in CROP is pseudonymised to retain the developers' identities. All names during the code review discussion are
+                     replaced by a randomly generated name. Finally, all email addresses in the discussion are made anonymous.
+                  </p><br>
+               </section>
+               </div>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap-3.3.2-dist/css/bootstrap.css" rel="stylesheet">
+               <div id="download">
+               <section class="s-12 l-6">
+                  <h3>Download</h3>
+                  <p>
+                     The CROP dataset can be downloaded <a href="https://drive.google.com/file/d/1YAR4v0PK6Agy98vGQCsSSCJELmEaW2GT/view" target=_blank">here</a>.
+                     You'll be taken to a google drive page that hosts the complete dataset under a single file <i>crop.zip</i>.
+                  </p><br>
+                  <p>
+                     After extracting <i>crop.zip</i>, the three main CROP directories will be created. In the <i>metadata</i> directory, you will find the CSV files
+                     that hold the metadata for each system in CROP. While in the <i>discussion</i> directory you can find the code review data in the format of 
+                     discussion files, you will be able to access the complete code base for each revision submitted for review in the git repositories contained in the
+                     <i>git_repos</i> directory.
+                  </p><br>
+                  <p>
+                     For more information on the structure of CROP's dataset, please see our <a href="#structure" class="structure">structure section</a>.
+                  </p><br>
+               </section>
+               </div>
 
-    <!-- Custom styles for this template -->
-    <link href="index_arquivos/justified-nav.css" rel="stylesheet">
+               <div id="details">
+               <section class="s-12 l-6">
+                  <h3>Data Currently in CROP</h3>
+                  <p>
+                     At the present moment, CROP contains data from two open source communities: <a href="https://www.eclipse.org/" target=_blank">Eclipse</a>
+                     and <a href="https://www.couchbase.com/" target=_blank">Couchbase</a>. For each of these communities, we provide the data for the 4 most popular
+                     projects in terms of the number of code reviews performed.
+                  </p><br>
+                  <p>
+                     The following table reports statistics concerning the data collected for each of these 8 systems, where the Eclipse projects are presented in the upper 
+                     section of the table and the Couchbase projects in the lower section.
+                  </p><br>
+                  <style type="text/css">
+                     .tg  {border-collapse:collapse;border-spacing:0;}
+                     .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                     .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
+                     .tg .tg-88nc{font-weight:bold;border-color:inherit;text-align:center}
+                     .tg .tg-8m2u{font-weight:bold;border-color:inherit}
+                     .tg .tg-7btt{font-weight:bold;border-color:inherit;text-align:center;vertical-align:top}
+                     .tg .tg-quj4{border-color:inherit;text-align:right}
+                     .tg .tg-dvpl{border-color:inherit;text-align:right;vertical-align:top}
+                  </style>
+                  <table class="tg">
+                     <tr>
+                        <th class="tg-8m2u">Systems</th>
+                        <th class="tg-88nc">Time Span<br></th>
+                        <th class="tg-7btt">#Reviews</th>
+                        <th class="tg-7btt">#Revisions<br></th>
+                        <th class="tg-7btt">Language</th>
+                        <th class="tg-7btt">Community</th>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">egit</td>
+                        <td class="tg-quj4">Oct-09 to Nov-17</td>
+                        <td class="tg-dvpl">5,336</td>
+                        <td class="tg-dvpl">13,211</td>
+                        <td class="tg-dvpl">Java</td>
+                        <td class="tg-dvpl">Eclipse</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">jgit<br></td>
+                        <td class="tg-quj4">Sep-09 to Nov-17</td>
+                        <td class="tg-dvpl">5,382</td>
+                        <td class="tg-dvpl">14,027</td>
+                        <td class="tg-dvpl">Java</td>
+                        <td class="tg-dvpl">Eclipse</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">linuxtools</td>
+                        <td class="tg-quj4">Jun-12 to Nov-17</td>
+                        <td class="tg-dvpl">4,129</td>
+                        <td class="tg-dvpl">11,763</td>
+                        <td class="tg-dvpl">Java</td>
+                        <td class="tg-dvpl">Eclipse</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">platform.ui</td>
+                        <td class="tg-quj4">Feb-13 to Nov-17</td>
+                        <td class="tg-dvpl">4,756</td>
+                        <td class="tg-dvpl">14,115</td>
+                        <td class="tg-dvpl">Java</td>
+                        <td class="tg-dvpl">Eclipse</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">ns_server</td>
+                        <td class="tg-quj4">Apr-10 to Nov-17</td>
+                        <td class="tg-dvpl">8,944</td>
+                        <td class="tg-dvpl">30,063</td>
+                        <td class="tg-dvpl">JavaScript<br></td>
+                        <td class="tg-dvpl">Couchbase</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">testrunner</td>
+                        <td class="tg-quj4">Oct-10 to Apr-16</td>
+                        <td class="tg-dvpl">10,421</td>
+                        <td class="tg-dvpl">24,207</td>
+                        <td class="tg-dvpl">Python</td>
+                        <td class="tg-dvpl">Couchbase</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">ep-engine</td>
+                        <td class="tg-quj4">Feb-11 to Nov-17</td>
+                        <td class="tg-dvpl">6,475</td>
+                        <td class="tg-dvpl">22,885</td>
+                        <td class="tg-dvpl">C++</td>
+                        <td class="tg-dvpl">Couchbase</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">indexing</td>
+                        <td class="tg-quj4">Mar-14 to Nov-17</td>
+                        <td class="tg-dvpl">3,240</td>
+                        <td class="tg-dvpl">8,316</td>
+                        <td class="tg-dvpl">Go</td>
+                        <td class="tg-dvpl">Couchbase</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">java-client</td>
+                        <td class="tg-quj4">Jan-12 to Nov-17</td>
+                        <td class="tg-dvpl">916</td>
+                        <td class="tg-dvpl">2,635</td>
+                        <td class="tg-dvpl">Java</td>
+                        <td class="tg-dvpl">Couchbase</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">jvm-core</td>
+                        <td class="tg-quj4">Apr-14 to Nov-17</td>
+                        <td class="tg-dvpl">841</td>
+                        <td class="tg-dvpl">2,301</td>
+                        <td class="tg-dvpl">Java</td>
+                        <td class="tg-dvpl">Couchbase</td>
+                     </tr>
+                     <tr>
+                        <td class="tg-8m2u">spymemcached</td>
+                        <td class="tg-quj4">May-10 to Jul-17</td>
+                        <td class="tg-dvpl">519</td>
+                        <td class="tg-dvpl">1,383</td>
+                        <td class="tg-dvpl">Java</td>
+                        <td class="tg-dvpl">Couchbase</td>
+                     </tr>
+                  </table><br>
+                  <h3>Dataset Structure</h3>
+                  <p>
+                     The CROP dataset is organised in three main directories: <i>Metadata</i>, <i>Git Repos</i> and <i>Discussion</i>. Details for each directory
+                     as follows:
+                  </p><br>
+                  <h4>Metadata</h4>
+                  <p>
+                     For each software system in CROP, we provide a CSV file that contains the general metadata for each review and revision stored in CROP. The CSV will be
+                     primarily used to navigate through the data and access the code review discussion files and the versions of the code base regarding each revision in the
+                     git repository. Each row in the CSV corresponds to a single revision submitted for code review, where you will find the following information:
+                  </p><br>
+                  <p>
+                     <b>id:</b> an unique id to identify the revision within an specific community<br>
+                     <b>review_number:</b> the unique review number in which the revision is part of<br>
+                     <b>revision_number:</b> the number of the revision in the specific review<br>
+                     <b>author:</b> the author of the revision<br>
+                     <b>status:</b> the status of the revision<br>
+                     <b>change_id:</b> the change id of this revision<br>
+                     <b>before_commit_id:</b> the commit id that represents the version of the system before the revision took place<br>
+                     <b>after_commit_id:</b> the commit id that represents the version of the system after the revision took place<br>
+                  </p><br>
+                  <h4>Git Repos</h4>
+                  <p>
+                     CROP provides git repositories that recreate the projects’ reviewing history to include all the revisions submitted for code review. Each repository
+                     has a single master branch, where the before and after versions of the source code for each revision were committed sequentially, based on the review and 
+                     revision numbers. Such versions are accessible through the commit ids provided in the projects’ CSV file, as discussed above.
+                  </p><br>
+                  <h4>Discussion</h4>
+                  <p>
+                     This is the directory in which CROP stores the discussion files for each revision. The directory follows a tree structure, organised by review number, 
+                     in which the discussion files for each revision are contained in the directory of its respective review. 
+                  </p><br>
+                  <p>
+                     A discussion file presents the reviewing data in the following order: first, the description of the revision is presented, which denotes the commit message 
+                     of the revision. Such a message includes the revision’s change-id and author. The comments that were made during review by other developers are presented next. 
+                     In the discussion file, CROP includes the author of the comment and the respective message.
+                  </p><br>
+                  <i><h3>Disclaimer</h3></i>
+                  <p>
+                     CROP was first published and described in this <a href="http://www0.cs.ucl.ac.uk/staff/m.paixao/preprints/preprint_crop_msr.pdf" target="_blank">research paper</a>. 
+                     Since its first publication, CROP has evolved and changed in its content and structure. Although the paper is the official guideline for the CROP dataset, this 
+                     website will always describe the most up to date version of the dataset.
+                  </p><br>
+               </section>
+               </div>
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-   
+               <div id="support">
+               <section class="s-12 l-6">
+                  <h3>Support</h3>
+                  <p>
+                  In order to support the users of the dataset, CROP provides an <a href="https://groups.google.com/forum/#!forum/crop-users" target="_blank">email list</a> 
+                  for users to get in touch with CROP creators and maintainers.
+                  </p><br>
+                  <p>
+                  Feel free to join the mail list if you have any question about the data and/or want to report any inconsistency you find. Overall, suggestions for improvement and 
+                  general discussions are always welcome.
+                  </p><br>
+               </section>
+               </div>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-   <script type='text/javascript' src='bootstrap-3.3.2-dist/js/jquery.min.js'></script>
-    
-  <script type="text/javascript">
-    jQuery(document).ready(function($) { 
-    $(".scroll").click(function(event){        
-        event.preventDefault();
-        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 400);
-        $('.active').removeClass('active');
-        $(this).parent().addClass('active');
-    });
-    });
-  </script>
+               <div id="contribute">
+               <section class="s-12 l-6">
+                  <h3>Contribute to the CROP</h3>
+                  <p>
+                  The source code used to create CROP is fully available at <a href="https://github.com/crop-repo/crop" target="_blank">CROP's github project</a>. The team behind
+                  CROP is always open for contributions from the users and community. Become part of the CROP now!
+                  </p><br>
+                  <h3>Replicate the CROP</h3>
+                  <p>
+                  CROP's source code can also be used to replicate the dataset. However, the software projects contained in CROP are active, with new code being submitted and
+                  reviewed on a regular basis. Therefore, in case of replication, the dataset will always be slightly different from the official version currently on the website.
+                  </p><br>
+                  <p>
+                  Please note that the scripts provided for replication will generate a non-anonymised version of the data.
+                  </p><br>
+                  <p>
+                  If you have any questions on how use CROP's source code to replicate the dataset, feel free to <a href="#contact" class="contact">contact</a> the CROP's team.
+                  </p><br>
+                  <h3>CROP's Team</h3>
+                  <p>
+                  <a href="http://www0.cs.ucl.ac.uk/staff/m.paixao/" target="_blank">Matheus Paixao</a><br>
+                  <a href="http://www0.cs.ucl.ac.uk/staff/j.krinke/" target="_blank">Dr. Jens Krinke</a><br>
+                  <a href="http://www0.cs.ucl.ac.uk/staff/M.Harman/" target="_blank">Prof. Mark Harman</a><br>
+                  <a href="https://donggyun.com/" target="_blank">Donggyun Han</a><br>
+                  </p><br>
+               </section>
+               </div>
 
-  <script type="text/javascript">
-    $(function() {
-        $(window).scroll(function(){
+               <div id="cite">
+               <section class="s-12 l-6">
+                  <h3>Cite CROP</h3>
+                  <p>
+                  If you want to cite CROP in your research paper, please use the following:
+                  </p><br>
+                  <h4>Bibtex</h4>
+                  <p>
+                  @inproceedings{Paixao2018,<br>
+                  author = {Paixao, Matheus and Krinke, Jens and Han, DongGyun and Harman, Mark},<br>
+                  title = {CROP: Linking Code Reviews to Source Code Changes},<br>
+                  booktitle = {International Conference on Mining Software Repositories},<br>
+                  series = {MSR},<br>
+                  year = {2018},<br>
+                  }
+                  </p><br>
+                  <h4>Formatted Citation</h4>
+                  <p>
+                  Matheus Paixao, Jens Krinke, DongGyun Han, and Mark Harman. 2018. CROP:
+                  Linking Code Reviews to Source Code Changes. In International Conference on
+                  Mining Software Repositories (MSR).
+                  </p><br>
+               </section>
+               </div>
 
-            var topo = $('.jumbotron').height() + 81; // altura do topo
-            var scrollTop = $(window).scrollTop(); // qto foi rolado a barra
-            var tamPagina = $(document).height(); // altura da página
-            var larPagina = $(document).width(); // altura da página
-            var larguraMenu = $('#menu').width();
+               <div id="publications">
+               <section class="s-12 l-6">
+                  <h3>Publications</h3>
+                  <p>
+                  This is a list of publications that use the CROP dataset. If you have a published piece of work that uses CROP and it is not listed above, 
+                  feel free to <a href="#contact" class="contact">contact</a> us. Your publication will be included in the list soon.
+                  </p><br>
+                  <h4>Conference Papers</h4>
+                  <p>
+                  Matheus Paixao, Jens Krinke, DongGyun Han, and Mark Harman. 2018. CROP:
+                  Linking Code Reviews to Source Code Changes. In International Conference on
+                  Mining Software Repositories (MSR). <a href="http://www0.cs.ucl.ac.uk/staff/m.paixao/preprints/preprint_crop_msr.pdf" target="_blank">Preprint</a>
+                  </p><br>
+               </section>
+               </div>
 
-            if((2 * larguraMenu) < larPagina){ //movimenta o menu apenas se o modo mobile não estiver ativo
+               <div id="contact">
+               <section class="s-12 l-6">
+                  <h3>Contact</h3>
+                  <p>
+                  You can contact the CROP's team through the following channels:
+                  </p><br>
+                  <p>
+                   <a href="https://groups.google.com/forum/#!forum/crop-users" target="_blank">CROP's mailing list</a><br>
+                   <a href="https://github.com/crop-repo/crop" target="_blank">CROP's github project</a><br><br>
 
-              if(scrollTop > topo){
-                  $('#menu').css({'width' : larguraMenu+'px', 'position' : 'absolute', 'z-index':'9','margin-top' : scrollTop - (topo-5)});
-              }else{
-                  $('#menu').css({'position' : 'relative', 'margin-top' : 0});
-              }               
-            }
+                  <p>
+                  CROP's Facebook page:
+                  </p><br>
+                   <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FCROP-Code-Review-Open-Platform-2138277899725563&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="99%" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                  </p><br>
+               </section>
+               </div>
 
-        });
-    });
-  </script>
-
-  </head>
-
-  <body id="topo">
-
-    <div class="container">
-      <!--
-      <div class="masthead">
-        <h3 class="text-muted">Project name</h3>
-        <nav>
-          <ul class="nav nav-justified">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Downloads</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </div> -->
-
-      <!-- Jumbotron -->
-      <div class="jumbotron">
-        <p class="creditos">CROP's Webpage</p>
-        <h3>Code Review Open Platform</h3>
-        <hr />
-        <p class="text">By <a href="http://www0.cs.ucl.ac.uk/staff/m.paixao/" target="_blank">Matheus Paixao</a>, <a href="http://www0.cs.ucl.ac.uk/staff/j.krinke/index.html" target="_blank">Jens Krinke</a>, <a href="https://dklab.net/" target="_blank">DongGyun Han</a> and <a href="http://www0.cs.ucl.ac.uk/staff/M.Harman/" target="_blank">Mark Harman</a>
+            </div>
+         </div>
       </div>
-
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-lg-2">
-          
-          
-            <ul id="menu" class="nav nav-pills nav-stacked bg-info">
-                  <li class="active"><a href="#topo" class="scroll"><span class="glyphicon glyphicon-home"></span>  Contents</a></li>
-                  <li><a href="#abstract" class="scroll"><i class="fa fa-list-alt fa-fw"></i>Release Note</a></li>
-            </ul><br/>
-        
-        </div>
-        <div class="col-lg-10">
-
-          <h2 id="abstract">Release Note</h2>
-          <p>
-            We (CROP authors) are currently evaluating the best way of releasing the CROP dataset given the new EU <a href="https://www.eugdpr.org/" target="_blank">GDPR regulation</a>.
-            Stay tuned to this website for any development on the CROP release.
-            <br><br>
-            In case of interest in using the CROP data at this moment, we strongly encourage the CROP users to personally contact the main CROP maintainer <a href="http://www0.cs.ucl.ac.uk/staff/m.paixao/" target="_blank">Matheus Paixao</a> at <b>matheus.paixao.14 (at) ucl.ac.uk</b>
-
-          </p>
-         
-      <!-- Site footer -->
-      <footer class="footer">
-        <p>March 2018 (last update: March 2018) </p>
-      </footer>
-
-    </div> <!-- /container -->
-
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="index_arquivos/ie10-viewport-bug-workaround.js"></script>
-  
-
-</body></html>
+      <!-- FOOTER -->
+      <div class="line">
+        <footer class="box">           
+              <div class="s-12 l-6">
+                 <p>Code Review Open Platform, 2018</p>
+              </div>
+              <div class="s-12 l-6">
+                 <a class="right" href="http://www0.cs.ucl.ac.uk/staff/m.paixao/" target="_blank">Matheus Paixao</a>
+              </div>
+           </div>
+        </footer>
+      </div>
+      <script type="text/javascript" src="js/responsee.js"></script>
+      <script type="text/javascript" src="js/navigation.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+   </body>
+</html>
