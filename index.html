@@ -148,11 +148,11 @@ gtag('config', 'UA-115826132-1');
 
                <div id="download">
                <section class="s-12 l-6">
-            
+
                   <h3>Download</h3>
                   <h3>Data Details</h3>
                   <p>
-                     At the present moment, EMRP contains data for multiple Extract refactoring techniques.
+                   EMRP contains data for multiple Extract refactoring techniques. All datasets & artifacts can be access through the below table containing links.
                   </p><br>
                   <p>
                      The following table elaborates on the details concerning the data utilized by each project.
@@ -170,113 +170,78 @@ gtag('config', 'UA-115826132-1');
                   <table class="tg">
                      <tr>
                         <th class="tg-8m2u">Approach</th>
-                        <th class="tg-7btt">Approach Methodology</th>
-                        <th class="tg-7btt">Extract Method Type<br></th>
                         <th class="tg-7btt">Data Source Names</th>
                         <th class="tg-7btt">Data Source Types</th>
                         <th class="tg-7btt">Artifacts</th>
                         <th class="tg-7btt">Input Method</th>
-                        <th class="tg-7btt">Metrics for Decision</th>
-                        <th class="tg-7btt">Metrics for Evaluation</th>
                         <th class="tg-7btt">Data availability</th> 
                         
                      </tr>
                      <tr>
                         <td class="tg-8m2u">SEMI</td>
-                        <td class="tg-quj4">agglomerative hierarchical clustering of code</td>
-                        <td class="tg-dvpl">Long Methods</td>
                         <td class="tg-dvpl">Wikidev, MyPlanner, MyWebMarket, Junit, JHotDraw</td>
                         <td class="tg-dvpl">Java</td>
                         <td class="tg-dvpl">No</td>
                         <td class="tg-dvpl">raw code</td>
-                        <td class="tg-dvpl">Primary Benefit, Size</td>
-                        <td class="tg-dvpl">Recall, F-measure</td>
                         <td class="tg-dvpl">Not Available</td>
 
                      </tr>
                      <tr>
                         <td class="tg-8m2u">Segmentation</td>
-                        <td class="tg-quj4">Graph segmentation of code</td>
-                        <td class="tg-dvpl">Long Methods</td>
                         <td class="tg-dvpl">JUnit, JHotDraw, MyWebMarket, EventBus, Mockito, Xdata</td>
                         <td class="tg-dvpl">Java, SQL</td>
                         <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">raw code</td>
-                        <td class="tg-dvpl">Lack of Computational Strength (LoCS)</td>
-                        <td class="tg-dvpl">Recall, F-measure</td>
                         <td class="tg-dvpl"> <a href="https://www.eclipse.org/" target=_blank">Java files</a></td>
                      </tr>
 
                      <tr>
                         <td class="tg-8m2u">Jextract</td>
-                        <td class="tg-quj4">a self-developed algorithm (rule-based approach) for extraction & uses the Kulczynski for scoring and Ranking</td>
-                        <td class="tg-dvpl">Long Method</td>
                         <td class="tg-dvpl">JHotDraw 5.2, JUnit 3.8, MyWebMarket</td>
                         <td class="tg-dvpl">Java</td>
                         <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">raw code</td>
-                        <td class="tg-dvpl">Size (Minimum Extracted Statements)</td>
-                        <td class="tg-dvpl">Recall, Precision</td>
                         <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Java files</a></a></td>
                      </tr>
 
 
                      <tr>
                         <td class="tg-8m2u"> Candidate Identification</td>
-                        <td class="tg-quj4">GraphCodeBert autoencoder is used for compact representation of source code to generate embedding fed to the binary random forest model</td>
-                        <td class="tg-dvpl">Method</td>
                         <td class="tg-dvpl">Not Mentioned</td>
                         <td class="tg-dvpl">Java</td>
                         <td class="tg-dvpl">No</td>
                         <td class="tg-dvpl">raw code</td>
-                        <td class="tg-dvpl">Source-code embeddings</td>
-                        <td class="tg-dvpl">Recall, Precision, F-measure, Accuracy</td>
                         <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Jsonl files</a></a></td>
                      </tr>
                      
                      <tr>
                         <td class="tg-8m2u">REM</td>
-                        <td class="tg-quj4">a self-developed algorithms</td>
-                        <td class="tg-dvpl">Methods</td>
                         <td class="tg-dvpl">Not Mentioned</td>
                         <td class="tg-dvpl">Rust</td>
                         <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">raw code</td>
-                        <td class="tg-dvpl">Project Type: Size, Code Features: NLL, NLR, IB, MB, NEL, SHL</td>
-                        <td class="tg-dvpl">RIJR, VSC, REM</td>
                         <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Project Samples</a></a></td>
                      </tr>
 
                      <tr>
                         <td class="tg-8m2u">CREC</td>
-                        <td class="tg-quj4">SourceCC tool for feature formation & ML models for binary classification problem. </td>
-                        <td class="tg-dvpl">Code Clones/td>
                         <td class="tg-dvpl">Axis2, Eclipse.jdt.core, Elastic Search, JFreeChart, JRuby, Lucene</td>
                         <td class="tg-dvpl">Java</td>
                         <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">raw code, computed metrics</td>
-                        <td class="tg-dvpl">34 features</td>
-                        <td class="tg-dvpl">Recall, Precision, F-measure</td>
                         <td class="tg-dvpl"> <a href="https://www.eclipse.org/" target=_blank">Java files</a>, <a href="https://www.eclipse.org/" target=_blank">Feature dataset</a></td>
                      </tr>
                      <tr>
                         <td class="tg-8m2u">Anticopypasting</td>
-                        <td class="tg-quj4">Convolutional Neural Network (CNN) with derived metrics</td>
-                        <td class="tg-dvpl">Code Clones (Duplicates)</td>
                         <td class="tg-dvpl">alibaba - arthas, easyexcel, apache - camel-quarkus, commons-lang, flink, iceberg, jena, kafka, pulsar, storm, ctripcorp - apollo, JetBrains- intellij-community, SnailClimb - JavaGuide</td>
                         <td class="tg-dvpl">Java</td>
                         <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">computed metrics</td>
-                        <td class="tg-dvpl">78 features</td>
-                        <td class="tg-dvpl">Recall, Precision, F-measure, AUC Score</td>
                         <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Feature dataset</a></a></td>
                      </tr>
 
                   </table><br>
-                  <p>
-                     The CROP dataset can be downloaded <a href="https://zenodo.org/record/3599150" target=_blank">here</a>.
-                     You'll be taken to a zenodo page that hosts the complete dataset.
-                  </p><br>
+
                   <p>
                      In the <i>metadata.zip</i> file, you will find the CSV files
                      that hold the metadata for each system in CROP. While in the <i>discussion.zip</i> file you can find the code review data in the format of 
@@ -313,52 +278,40 @@ gtag('config', 'UA-115826132-1');
                         <th class="tg-8m2u">Approach</th>
                         <th class="tg-7btt">Approach Methodology</th>
                         <th class="tg-7btt">Extract Method Type<br></th>
-                        <th class="tg-7btt">Data Source Names</th>
                         <th class="tg-7btt">Data Source Types</th>
-                        <th class="tg-7btt">Artifacts</th>
                         <th class="tg-7btt">Input Method</th>
                         <th class="tg-7btt">Metrics for Decision</th>
                         <th class="tg-7btt">Metrics for Evaluation</th>
-                        <th class="tg-7btt">Data availability</th> 
                         
                      </tr>
                      <tr>
                         <td class="tg-8m2u">SEMI</td>
                         <td class="tg-quj4">agglomerative hierarchical clustering of code</td>
                         <td class="tg-dvpl">Long Methods</td>
-                        <td class="tg-dvpl">Wikidev, MyPlanner, MyWebMarket, Junit, JHotDraw</td>
                         <td class="tg-dvpl">Java</td>
-                        <td class="tg-dvpl">No</td>
                         <td class="tg-dvpl">raw code</td>
                         <td class="tg-dvpl">Primary Benefit, Size</td>
                         <td class="tg-dvpl">Recall, F-measure</td>
-                        <td class="tg-dvpl">Not Available</td>
 
                      </tr>
                      <tr>
                         <td class="tg-8m2u">Segmentation</td>
                         <td class="tg-quj4">Graph segmentation of code</td>
                         <td class="tg-dvpl">Long Methods</td>
-                        <td class="tg-dvpl">JUnit, JHotDraw, MyWebMarket, EventBus, Mockito, Xdata</td>
                         <td class="tg-dvpl">Java, SQL</td>
-                        <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">raw code</td>
                         <td class="tg-dvpl">Lack of Computational Strength (LoCS)</td>
                         <td class="tg-dvpl">Recall, F-measure</td>
-                        <td class="tg-dvpl"> <a href="https://www.eclipse.org/" target=_blank">Java files</a></td>
                      </tr>
 
                      <tr>
                         <td class="tg-8m2u">Jextract</td>
                         <td class="tg-quj4">a self-developed algorithm (rule-based approach) for extraction & uses the Kulczynski for scoring and Ranking</td>
                         <td class="tg-dvpl">Long Method</td>
-                        <td class="tg-dvpl">JHotDraw 5.2, JUnit 3.8, MyWebMarket</td>
                         <td class="tg-dvpl">Java</td>
-                        <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">raw code</td>
                         <td class="tg-dvpl">Size (Minimum Extracted Statements)</td>
                         <td class="tg-dvpl">Recall, Precision</td>
-                        <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Java files</a></a></td>
                      </tr>
 
 
@@ -366,51 +319,39 @@ gtag('config', 'UA-115826132-1');
                         <td class="tg-8m2u"> Candidate Identification</td>
                         <td class="tg-quj4">GraphCodeBert autoencoder is used for compact representation of source code to generate embedding fed to the binary random forest model</td>
                         <td class="tg-dvpl">Method</td>
-                        <td class="tg-dvpl">Not Mentioned</td>
                         <td class="tg-dvpl">Java</td>
-                        <td class="tg-dvpl">No</td>
                         <td class="tg-dvpl">raw code</td>
                         <td class="tg-dvpl">Source-code embeddings</td>
                         <td class="tg-dvpl">Recall, Precision, F-measure, Accuracy</td>
-                        <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Jsonl files</a></a></td>
                      </tr>
                      
                      <tr>
                         <td class="tg-8m2u">REM</td>
                         <td class="tg-quj4">a self-developed algorithms</td>
                         <td class="tg-dvpl">Methods</td>
-                        <td class="tg-dvpl">Not Mentioned</td>
                         <td class="tg-dvpl">Rust</td>
-                        <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">raw code</td>
                         <td class="tg-dvpl">Project Type: Size, Code Features: NLL, NLR, IB, MB, NEL, SHL</td>
                         <td class="tg-dvpl">RIJR, VSC, REM</td>
-                        <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Project Samples</a></a></td>
                      </tr>
 
                      <tr>
                         <td class="tg-8m2u">CREC</td>
                         <td class="tg-quj4">SourceCC tool for feature formation & ML models for binary classification problem. </td>
                         <td class="tg-dvpl">Code Clones/td>
-                        <td class="tg-dvpl">Axis2, Eclipse.jdt.core, Elastic Search, JFreeChart, JRuby, Lucene</td>
                         <td class="tg-dvpl">Java</td>
-                        <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">raw code, computed metrics</td>
                         <td class="tg-dvpl">34 features</td>
                         <td class="tg-dvpl">Recall, Precision, F-measure</td>
-                        <td class="tg-dvpl"> <a href="https://www.eclipse.org/" target=_blank">Java files</a>, <a href="https://www.eclipse.org/" target=_blank">Feature dataset</a></td>
-                     </tr>
+                      </tr>
                      <tr>
                         <td class="tg-8m2u">Anticopypasting</td>
                         <td class="tg-quj4">Convolutional Neural Network (CNN) with derived metrics</td>
                         <td class="tg-dvpl">Code Clones (Duplicates)</td>
-                        <td class="tg-dvpl">alibaba - arthas, easyexcel, apache - camel-quarkus, commons-lang, flink, iceberg, jena, kafka, pulsar, storm, ctripcorp - apollo, JetBrains- intellij-community, SnailClimb - JavaGuide</td>
                         <td class="tg-dvpl">Java</td>
-                        <td class="tg-dvpl">Yes</td>
                         <td class="tg-dvpl">computed metrics</td>
                         <td class="tg-dvpl">78 features</td>
                         <td class="tg-dvpl">Recall, Precision, F-measure, AUC Score</td>
-                        <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Feature dataset</a></a></td>
                      </tr>
 
 
