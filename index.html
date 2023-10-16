@@ -167,14 +167,12 @@ gtag('config', 'UA-115826132-1');
 
                <div id="details">
                <section class="s-12 l-6">
-                  <h3>Current Data Available</h3>
+                  <h3>Data Details</h3>
                   <p>
-                     At the present moment, EMRP contains data for multiple Extract refactoring techniques. <a href="https://www.eclipse.org/" target=_blank">Eclipse</a>
-                     and <a href="https://www.couchbase.com/" target=_blank">Couchbase</a>. For each of these communities, we provide the data for the 4 most popular
-                     projects in terms of the number of code reviews performed.
+                     At the present moment, EMRP contains data for multiple Extract refactoring techniques.
                   </p><br>
                   <p>
-                     The following table elaborates on the statistics concerning the data utilized by each project.
+                     The following table elaborates on the details concerning the data utilized by each project.
                   </p><br>
                   <style type="text/css">
                      .tg  {border-collapse:collapse;border-spacing:0;}
@@ -225,6 +223,47 @@ gtag('config', 'UA-115826132-1');
                         <td class="tg-dvpl">Recall, F-measure</td>
                         <td class="tg-dvpl"> <a href="https://www.eclipse.org/" target=_blank">Java files</a></td>
                      </tr>
+
+                     <tr>
+                        <td class="tg-8m2u">Jextract</td>
+                        <td class="tg-quj4">a self-developed algorithm (rule-based approach) for extraction & uses the Kulczynski for scoring and Ranking</td>
+                        <td class="tg-dvpl">Long Method</td>
+                        <td class="tg-dvpl">JHotDraw 5.2, JUnit 3.8, MyWebMarket</td>
+                        <td class="tg-dvpl">Java</td>
+                        <td class="tg-dvpl">Yes</td>
+                        <td class="tg-dvpl">raw code</td>
+                        <td class="tg-dvpl">Size (Minimum Extracted Statements)</td>
+                        <td class="tg-dvpl">Recall, Precision</td>
+                        <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Java files</a></a></td>
+                     </tr>
+
+
+                     <tr>
+                        <td class="tg-8m2u"> Candidate Identification</td>
+                        <td class="tg-quj4">GraphCodeBert autoencoder is used for compact representation of source code to generate embedding fed to the binary random forest model</td>
+                        <td class="tg-dvpl">Method</td>
+                        <td class="tg-dvpl">Not Mentioned</td>
+                        <td class="tg-dvpl">Java</td>
+                        <td class="tg-dvpl">No</td>
+                        <td class="tg-dvpl">raw code</td>
+                        <td class="tg-dvpl">Source-code embeddings</td>
+                        <td class="tg-dvpl">Recall, Precision, F-measure, Accuracy</td>
+                        <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Jsonl files</a></a></td>
+                     </tr>
+                     
+                     <tr>
+                        <td class="tg-8m2u">REM</td>
+                        <td class="tg-quj4">a self-developed algorithms</td>
+                        <td class="tg-dvpl">Methods</td>
+                        <td class="tg-dvpl">Not Mentioned</td>
+                        <td class="tg-dvpl">Rust</td>
+                        <td class="tg-dvpl">Yes</td>
+                        <td class="tg-dvpl">raw code</td>
+                        <td class="tg-dvpl">Project Type: Size, Code Features: NLL, NLR, IB, MB, NEL, SHL</td>
+                        <td class="tg-dvpl">RIJR, VSC, REM</td>
+                        <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Project Samples</a></a></td>
+                     </tr>
+
                      <tr>
                         <td class="tg-8m2u">CREC</td>
                         <td class="tg-quj4">SourceCC tool for feature formation & ML models for binary classification problem. </td>
@@ -235,7 +274,7 @@ gtag('config', 'UA-115826132-1');
                         <td class="tg-dvpl">raw code, computed metrics</td>
                         <td class="tg-dvpl">34 features</td>
                         <td class="tg-dvpl">Recall, Precision, F-measure</td>
-                        <td class="tg-dvpl"> <a href="https://www.eclipse.org/" target=_blank">code statements</a>, Feature dataset<a href="https://www.eclipse.org/" target=_blank">Feature dataset</a></td>
+                        <td class="tg-dvpl"> <a href="https://www.eclipse.org/" target=_blank">Java files</a>, <a href="https://www.eclipse.org/" target=_blank">Feature dataset</a></td>
                      </tr>
                      <tr>
                         <td class="tg-8m2u">Anticopypasting</td>
@@ -247,8 +286,11 @@ gtag('config', 'UA-115826132-1');
                         <td class="tg-dvpl">computed metrics</td>
                         <td class="tg-dvpl">78 features</td>
                         <td class="tg-dvpl">Recall, Precision, F-measure, AUC Score</td>
-                        <td class="tg-dvpl">  Feature dataset<a href="https://www.eclipse.org/" target=_blank">Feature dataset</a></a></td>
+                        <td class="tg-dvpl">  <a href="https://www.eclipse.org/" target=_blank">Feature dataset</a></a></td>
                      </tr>
+
+
+
                   </table><br>
                   <h3>Dataset Structure</h3>
                   <p>
