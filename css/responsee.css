@@ -71,10 +71,30 @@ h6 {font-size:0.9rem;}
 .answer{
   max-height: 0;
   overflow: hidden;
+  position: relative;
+  background-color: #212838; 
   
 }
+.answer::before{
+  content: " ";
+  position: absolute;
+  width: .6rem;
+  height: 90%;
+  background-color: #8fc460;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
 
+.context p{
+  font-size: 1.4rem;
+  color: #ffff;
+  padding: 2 rem;
+}
 
+.paper-item:target .answer{
+  max-height: 20rem;
+}
 
 
 
