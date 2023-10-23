@@ -45,9 +45,9 @@ h6 {font-size:0.9rem;}
 }
 .paper-link{
   font-size: 1.1rem;
-  color: rgba(255,255,255,.8);
+  color: #000000;
   text-decoration: none;
-  background-color: #192731;
+  background-color: rgba(255,255,255,.8);
   width: 100%;
   display: flex;
   align-items: center;
@@ -79,7 +79,7 @@ h6 {font-size:0.9rem;}
 .context::before{
   content: " ";
   position: absolute;
-  width: .6rem;
+  width: .2rem;
   height: 90%;
   /* background-color: #fff; */
   top: 50%;
