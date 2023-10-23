@@ -45,9 +45,9 @@ h6 {font-size:0.9rem;}
 }
 .paper-link{
   font-size: 1.1rem;
-  color: #000000;
+  color: #fff;
   text-decoration: none;
-  background-color: rgba(255,255,255,.8);
+  background-color: #192731;
   width: 100%;
   display: flex;
   align-items: center;
@@ -72,7 +72,7 @@ h6 {font-size:0.9rem;}
   max-height: 0;
   overflow: hidden;
   position: relative;
-  background-color: #212838; 
+  background-color: #fff; 
   transition: max-height 650ms;
 }
 
@@ -89,7 +89,7 @@ h6 {font-size:0.9rem;}
 
 .context p{
   font-size: 0.9rem;
-  color: #ffff;
+  color: #000000;
   padding: 2 rem;
 }
 
@@ -110,14 +110,14 @@ h6 {font-size:0.9rem;}
 
 a, a:link, a:visited, a:hover, a:active {
   text-decoration:none;
-  color:#9BB800;
+  color:#fff;
   transition:color 0.20s linear 0s;
   -o-transition:color 0.20s linear 0s;
   -ms-transition:color 0.20s linear 0s;
   -moz-transition:color 0.20s linear 0s;
   -webkit-transition:color 0.20s linear 0s;
 }  
-a:hover {color:#B6C900;}
+a:hover {color:#fff;}
 p,li,dl,blockquote,table,kbd {
   font-size: 0.85rem;
   line-height: 1.6;
