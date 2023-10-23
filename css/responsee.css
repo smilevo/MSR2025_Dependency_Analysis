@@ -41,10 +41,11 @@ h6 {font-size:0.9rem;}
   border-radius: .4rem;
   margin-bottom: 1rem;
   padding: 1rem;
-  box-shadow: .5rem 2px .5rem #fff;
+  box-shadow: .5rem 2px .5rem rgba(0,0,0,.1);
 }
+
 .paper-link{
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #fff;
   text-decoration: none;
   background-color: #192731;
@@ -68,6 +69,8 @@ h6 {font-size:0.9rem;}
   display: none;
 
 }
+
+
 .context{
   max-height: 0;
   overflow: hidden;
@@ -79,7 +82,7 @@ h6 {font-size:0.9rem;}
 .context::before{
   content: " ";
   position: absolute;
-  width: .2rem;
+  width: .6rem;
   height: 90%;
   /* background-color: #fff; */
   top: 50%;
@@ -111,14 +114,14 @@ h6 {font-size:0.9rem;}
 
 a, a:link, a:visited, a:hover, a:active {
   text-decoration:none;
-  color:#000;
+  color:#0000;
   transition:color 0.20s linear 0s;
   -o-transition:color 0.20s linear 0s;
   -ms-transition:color 0.20s linear 0s;
   -moz-transition:color 0.20s linear 0s;
   -webkit-transition:color 0.20s linear 0s;
 }  
-a:hover {color:#000;}
+a:hover {color:#0000;}
 p,li,dl,blockquote,table,kbd {
   font-size: 0.85rem;
   line-height: 1.6;
