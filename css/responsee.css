@@ -74,7 +74,7 @@ h6 {font-size:0.9rem;}
 .context{
   max-height: 0;
   border-radius: .4rem;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   overflow: hidden;
   position: relative;
   background-color: #fff; 
@@ -96,7 +96,7 @@ h6 {font-size:0.9rem;}
 
   font-size: 0.9rem;
   color: #000000;
-  padding: 7rem;
+  padding: 3rem;
 }
 
 .paper-item:target .context{
