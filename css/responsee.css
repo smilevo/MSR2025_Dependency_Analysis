@@ -72,9 +72,6 @@ h6 {font-size:0.9rem;}
   max-height: 0;
   overflow: hidden;
   position: relative;
-  border-radius: .4rem;
-  margin-bottom: 1rem;
-  padding: 1rem;
   background-color: #fff; 
   transition: max-height 650ms;
 }
@@ -91,10 +88,10 @@ h6 {font-size:0.9rem;}
 }
 
 .context p{
-  border-radius: .4rem;
+  /*border-radius: .4rem;*/
   font-size: 0.9rem;
   color: #000000;
-  padding: 5 rem;
+  padding: 2 rem;
 }
 
 .paper-item:target .context{
@@ -114,14 +111,14 @@ h6 {font-size:0.9rem;}
 
 a, a:link, a:visited, a:hover, a:active {
   text-decoration:none;
-  color:#fff;
+  color:#000;
   transition:color 0.20s linear 0s;
   -o-transition:color 0.20s linear 0s;
   -ms-transition:color 0.20s linear 0s;
   -moz-transition:color 0.20s linear 0s;
   -webkit-transition:color 0.20s linear 0s;
 }  
-a:hover {color:#fff;}
+a:hover {color:#000;}
 p,li,dl,blockquote,table,kbd {
   font-size: 0.85rem;
   line-height: 1.6;
