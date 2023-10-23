@@ -91,7 +91,7 @@ h6 {font-size:0.9rem;}
 }
 
 .context p{
-  /*border-radius: .4rem;*/
+  border-radius: .4rem;
   font-size: 0.9rem;
   color: #000000;
   padding: 2 rem;
@@ -114,7 +114,7 @@ h6 {font-size:0.9rem;}
 
 a, a:link, a:visited, a:hover, a:active {
   text-decoration:none;
-  color:#0000;
+  color:#00aeb7;
   transition:color 0.20s linear 0s;
   -o-transition:color 0.20s linear 0s;
   -ms-transition:color 0.20s linear 0s;
