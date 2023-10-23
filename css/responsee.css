@@ -68,14 +68,14 @@ h6 {font-size:0.9rem;}
   display: none;
 
 }
-.answer{
+.context{
   max-height: 0;
   overflow: hidden;
   position: relative;
   background-color: #212838; 
   
 }
-.answer::before{
+.context::before{
   content: " ";
   position: absolute;
   width: .6rem;
@@ -92,7 +92,7 @@ h6 {font-size:0.9rem;}
   padding: 2 rem;
 }
 
-.paper-item:target .answer{
+.paper-item:target .context{
   max-height: 20rem;
 }
 
