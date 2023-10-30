@@ -14,6 +14,7 @@ $('.home').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
+       $('#paper1').hide();
 });
 
 $('.about').on('click', function() {
@@ -27,6 +28,7 @@ $('.about').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
+       $('#paper1').hide();
 });
 
 $('.download').on('click', function() {
@@ -40,6 +42,7 @@ $('.download').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
+       $('#paper1').hide();
 });
 
 $('.details').on('click', function() {
@@ -53,6 +56,7 @@ $('.details').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
+       $('#paper1').hide();
 });
 
 $('.protection').on('click', function() {
@@ -66,6 +70,7 @@ $('.protection').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
+       $('#paper1').hide();
 });
 
 $('.support').on('click', function() {
@@ -79,6 +84,7 @@ $('.support').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
+       $('#paper1').hide();
 });
 
 $('.contribute').on('click', function() {
@@ -92,6 +98,7 @@ $('.contribute').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
+       $('#paper1').hide();
 });
 
 $('.cite').on('click', function() {
@@ -105,6 +112,7 @@ $('.cite').on('click', function() {
        $('#cite').show();
        $('#publications').hide();
        $('#contact').hide();
+       $('#paper1').hide();
 });
 
 $('.publications').on('click', function() {
@@ -118,6 +126,7 @@ $('.publications').on('click', function() {
        $('#cite').hide();
        $('#publications').show();
        $('#contact').hide();
+       $('#paper1').hide();
 });
 
 $('.contact').on('click', function() {
@@ -131,4 +140,20 @@ $('.contact').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').show();
+       $('#paper1').hide();
+});
+
+$('.paper1').on('click', function() {
+       console.log("here")
+       $('#paper1').show();
+       $('#home').hide();
+       $('#about').hide();
+       $('#download').hide();
+       $('#details').hide();
+       $('#protection').hide();
+       $('#support').hide();
+       $('#contribute').hide();
+       $('#cite').hide();
+       $('#publications').hide();
+       $('#contact').hide();
 });
