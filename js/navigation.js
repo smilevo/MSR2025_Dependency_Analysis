@@ -14,7 +14,14 @@ $('.home').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
+
 });
 
 $('.about').on('click', function() {
@@ -28,7 +35,13 @@ $('.about').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
 });
 
 $('.download').on('click', function() {
@@ -42,7 +55,13 @@ $('.download').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
 });
 
 $('.details').on('click', function() {
@@ -56,7 +75,13 @@ $('.details').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
 });
 
 $('.protection').on('click', function() {
@@ -70,7 +95,13 @@ $('.protection').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
 });
 
 $('.support').on('click', function() {
@@ -84,7 +115,13 @@ $('.support').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
 });
 
 $('.contribute').on('click', function() {
@@ -98,7 +135,13 @@ $('.contribute').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
 });
 
 $('.cite').on('click', function() {
@@ -112,7 +155,13 @@ $('.cite').on('click', function() {
        $('#cite').show();
        $('#publications').hide();
        $('#contact').hide();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
 });
 
 $('.publications').on('click', function() {
@@ -126,7 +175,13 @@ $('.publications').on('click', function() {
        $('#cite').hide();
        $('#publications').show();
        $('#contact').hide();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
 });
 
 $('.contact').on('click', function() {
@@ -140,12 +195,18 @@ $('.contact').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').show();
-       $('#paper1').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
 });
 
-$('.paper1').on('click', function() {
+$('.SEMI').on('click', function() {
        console.log("here")
-       $('#paper1').show();
+       
        $('#home').hide();
        $('#about').hide();
        $('#download').hide();
@@ -156,4 +217,155 @@ $('.paper1').on('click', function() {
        $('#cite').hide();
        $('#publications').hide();
        $('#contact').hide();
+       $('#SEMI').show();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
+
+
+});
+
+$('.Segmentation').on('click', function() {
+       console.log("here")
+       
+       $('#home').hide();
+       $('#about').hide();
+       $('#download').hide();
+       $('#details').hide();
+       $('#protection').hide();
+       $('#support').hide();
+       $('#contribute').hide();
+       $('#cite').hide();
+       $('#publications').hide();
+       $('#contact').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').show();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
+
+
+});
+
+$('.CREC').on('click', function() {
+       console.log("here")
+       
+       $('#home').hide();
+       $('#about').hide();
+       $('#download').hide();
+       $('#details').hide();
+       $('#protection').hide();
+       $('#support').hide();
+       $('#contribute').hide();
+       $('#cite').hide();
+       $('#publications').hide();
+       $('#contact').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').show();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
+
+
+});
+
+$('.Anticopypaster').on('click', function() {
+       console.log("here")
+       
+       $('#home').hide();
+       $('#about').hide();
+       $('#download').hide();
+       $('#details').hide();
+       $('#protection').hide();
+       $('#support').hide();
+       $('#contribute').hide();
+       $('#cite').hide();
+       $('#publications').hide();
+       $('#contact').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').show();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').hide();
+
+
+});
+
+$('.JExtract').on('click', function() {
+       console.log("here")
+       
+       $('#home').hide();
+       $('#about').hide();
+       $('#download').hide();
+       $('#details').hide();
+       $('#protection').hide();
+       $('#support').hide();
+       $('#contribute').hide();
+       $('#cite').hide();
+       $('#publications').hide();
+       $('#contact').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').show();
+       $('#REM').hide();
+       $('#Candidate').hide();
+
+});
+
+
+$('.REM').on('click', function() {
+       console.log("here")
+       
+       $('#home').hide();
+       $('#about').hide();
+       $('#download').hide();
+       $('#details').hide();
+       $('#protection').hide();
+       $('#support').hide();
+       $('#contribute').hide();
+       $('#cite').hide();
+       $('#publications').hide();
+       $('#contact').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').show();
+       $('#Candidate').hide();
+
+});
+
+$('.Candidate').on('click', function() {
+       console.log("here")
+       
+       $('#home').hide();
+       $('#about').hide();
+       $('#download').hide();
+       $('#details').hide();
+       $('#protection').hide();
+       $('#support').hide();
+       $('#contribute').hide();
+       $('#cite').hide();
+       $('#publications').hide();
+       $('#contact').hide();
+       $('#SEMI').hide();
+       $('#Segmentation').hide();
+       $('#CREC').hide();
+       $('#Anticopypaster').hide();
+       $('#JExtract').hide();
+       $('#REM').hide();
+       $('#Candidate').show();
+
 });
