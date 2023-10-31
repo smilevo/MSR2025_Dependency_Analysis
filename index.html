@@ -800,21 +800,14 @@ gtag('config', 'UA-115826132-1');
                      
                      <!-- <br><img src="images/Seg_image_3.png" style="width:350px;height:auto;" /><br> -->
                      
-                     <br><b>Step 3:</b>
+                     <br><p><b>Step 3:</b></p>
                      <p>Accuracy of approach for Long Methods is compared to other approaches such as SEMI and JExtract using the following Evaluation metrics:</p>
                      <ul>
                         <li>Recall</li>
                         <li>Precision</li>
                         <li>F-measure</li>
                      </ul>
-                     <img src="images/Seg_image_4.png" style="width:400px;height:auto;" /><br>
-                     
-
-
-
-
-
-
+                     <br><img src="images/Seg_image_4.png" style="width:400px;height:auto;" /><br>
 
 
                </section></div>
@@ -959,7 +952,7 @@ gtag('config', 'UA-115826132-1');
 
                            <br><img src="images/Anti-copypaster_image_1.png" style="width:800px;height:auto;" /> <br>
                            
-                           <b>Step 5: Evaluation</b>
+                        <p><b>Step 5: Evaluation</b></p>
                            <p>Accuracy of approach using CNN is compared to other machine learning models and the following evaluation metrics are used:</p>
                            <ul>
                               <li>Recall</li>
@@ -990,7 +983,7 @@ gtag('config', 'UA-115826132-1');
                        <li>Open-source projects used for this approach are JHotDraw 5.2, JUnit 3.8, and MyWebMarket.</li>
                     </ul><br>
 
-                    <br><img src="images/JExtract_image_1.png" style="width:800px;height:auto;" /> <br>
+                    <br><img src="images/JExtract_image_1.png" style="width:700px;height:auto;" /> <br>
 
                     <p><b>Approach Overview:</b></p>
                     
@@ -1041,9 +1034,69 @@ gtag('config', 'UA-115826132-1');
                <div id= "REM">
                   <section class="s-12 l-8">
                      
-                     <h5>Adventure of a lifetime: Extract Method Refactoring for Rust</h5>
+                     <h5>Adventure of a lifetime: Extract Method Refactoring for Rust</h5><br>
 
 
+                     <p><b>Summary:</b> The author of this paper designs and implements an automated Extract Method 
+                        refactoring tool <b>(REM)</b> for the Rust programs, considering the challenges imposed by Rust’s ownership and lifetime-based type system.
+                    </p><br>
+
+                   <p> Orginal Paper Link: <a href= "https://github.com/EMRP10/Extract-Method-Refactoring-Platform/blob/e0f1df00783e57695d076bb47bda409c66cb9c72/Papers/Paper_6%20-%20REM.pdf" target="_blank">REM</a> </p>
+                   <p> Data & Tools Link: <a href="#download" class="download">Download Data Tools</a> section.</p><br></p>
+                   
+                   <p><b>Data Details:</b><br>
+                  <p>The research utilized a corpus of changes (40 experiments) in five popular Rust projects for evaluation, namely:</p>
+                   <ul>
+                      <li>petgraph; a graph library. </li>
+                      <li>gitoxide; a Rust implementation of git. </li>
+                      <li>kickoff, a GUI program launcher. </li>
+                      <li>sniffnet, a network packet sniffer. </li>
+                      <li>beerus, a lightweight client for the Starknet decentralized network. </li>
+                   </ul><br>
+
+                  
+                   <p><b>Approach Overview:</b></p>
+
+                   <p><b>Step 1: Systematic Decomposition </b></p>
+                   <p>THe paper broke down the Extract Method refactoring process for Rust programs into several distinct stages, 
+                     aiming to align with Rust's type safety requirements. This systematic approach allowed them to develop a clear understanding of the unique challenges 
+                     posed by Rust's ownership and lifetime-based type system. By decomposing the problem, they were able to identify 
+                     specific areas where traditional refactoring techniques might not suffice.</p> <br>
+
+                  
+                  
+                  <p><b>Step 2: Formulation of Extract Method</b></p>
+                  <p>Extract Method was formulated as a multi-step process, beginning with the initial extraction of the code segment and followed by a series of repair procedures. 
+                     This included both naïve function hoisting and subsequent sophisticated repair procedures, which were necessary to ensure that the resulting program 
+                     complied with Rust's strict type system. The formulation also took into account the need for precise ownership annotations and appropriate handling of 
+                     lifetime constraints, ensuring that the refactored code remained well-typed.</p>
+
+                     <br><img src="images/REM_image_1.png" style="width:700px;height:auto;" /> <br>
+
+                  <p><b>Step 3: Automated Analysis and Repair Procedures</b></p>
+                  <p> The solution involved a series of automated analyses and repair procedures, including:</p>
+                  <ul>
+                     <li> A novel static intra-procedural ownership analysis for inferring precise ownership annotations for the extracted function's parameters. The key features of the analysis were: </li>
+                     <ul>
+                        <li>Ordered Abstract Domain for Ownership Annotations</li>
+                        <li>Inference of Ownership Annotations</li>
+                        <li>Consideration of Borrowing and Mutation</li>
+                        <li>Handling Data Flow and Aliases</li>
+                     </ul>
+
+                     <li>Utilization of the Rust compiler's lifetime checker for the appropriate annotation of lifetime constraints in the extracted function's signature.</li>
+                  </li></ul>
+
+                  <br><img src="images/REM_image_2.png" style="width:600px;height:auto;" /> <br>
+
+                  <p><b>Step 4: Tool Implementation (REM)</b></p>
+                  <p>The culmination of the research efforts led to the development of a tool named REM, which served as an automated Extract Method refactoring solution
+                   integrated with the IntelliJ IDEA plugin for Rust. This tool was designed with a focus on expanding the capabilities of traditional refactoring tools 
+                   to accommodate the complexities of Rust's type system. REM's implementation facilitated the extraction of a wider range of feature-rich code fragments 
+                   into semantically correct functions. It was also capable of replicating manual method extractions performed by human developers, thus highlighting 
+                   its effectiveness and reliability in practical development scenarios.</p>
+
+                   <br><img src="images/REM_image_3.png" style="width:700px;height:auto;" /> <br>
                      
                </section></div>
 
