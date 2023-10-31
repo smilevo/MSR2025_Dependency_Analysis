@@ -198,7 +198,7 @@ gtag('config', 'UA-115826132-1');
                      
                      <tr>
                         <td class="tg-8m2u">REM</td>
-                        <td class="tg-dvpl">Not Mentioned</td>
+                        <td class="tg-dvpl">petgraph, gitoxide, kickoff, sniffnet, beerus</td>
                         <td class="tg-dvpl">Rust</td>
                         <td class="tg-dvpl"><a href="https://drive.google.com/drive/folders/1KSGuudPXWwP1Ucgiib0maid5-8eaKfz2?usp=sharing" target=_blank">Yes</a></td>
                         <td class="tg-dvpl">raw code</td>
@@ -1058,7 +1058,7 @@ gtag('config', 'UA-115826132-1');
                    <p><b>Approach Overview:</b></p>
 
                    <p><b>Step 1: Systematic Decomposition </b></p>
-                   <p>THe paper broke down the Extract Method refactoring process for Rust programs into several distinct stages, 
+                   <p>The paper broke down the Extract Method refactoring process for Rust programs into several distinct stages, 
                      aiming to align with Rust's type safety requirements. This systematic approach allowed them to develop a clear understanding of the unique challenges 
                      posed by Rust's ownership and lifetime-based type system. By decomposing the problem, they were able to identify 
                      specific areas where traditional refactoring techniques might not suffice.</p> <br>
@@ -1103,7 +1103,83 @@ gtag('config', 'UA-115826132-1');
                <div id= "Candidate">
                   <section class="s-12 l-8">
                      
-                     <h5>Candidate - Automatic refactoring Candidate Identification leveraging effective Code Representation</h5>
+                     <h5>Automatic refactoring Candidate Identification leveraging effective Code Representation</h5><br>
+
+                     <p><b>Summary:</b> The research aims to improve the identification of extract method refactoring candidates by 
+                        leveraging deep learning techniques such as BERT and Autoencoder, specifically addressing the deficiencies
+                         of existing studies that primarily use source code metrics and commit messages. The proposed approach aims
+                          to capture both syntactic and semantic characteristics of code, ensuring a higher-quality dataset for training.
+                    </p><br>
+
+                   <p> Orginal Paper Link: <a href= "https://github.com/EMRP10/Extract-Method-Refactoring-Platform/blob/main/Papers/Paper_7%20-%20Candidate%20Identification.pdf" target="_blank">Candidate Identification</a> </p>
+                   <p> Data & Tools Link: <a href="#download" class="download">Download Data Tools</a> section.</p><br>
+                   
+                   <p><b>Data Details:</b><br>
+                     <p>
+                        The study utilizes a subset of 410 open-source Java repositories, employing tools like RefactoringMiner and PyDriller 
+                        to segregate methods into positive and negative samples for extract method refactoring. The dataset contains a total of 55,430 samples.
+                     </p>
+
+                     <br><p><b>Approach Overview:</b></p><br>
+
+                     <p><b>Step 1: Dataset Preparation </b></p>
+                     <p><ul>
+                        <li> The research introduces a novel method to identify negative samples, which involves considering a 
+                           method as a negative sample if it underwent extract method refactoring in its parent commit.
+                        </li>
+                        <li> The approach is aimed at improving the quality of the dataset by minimizing noise 
+                           that may arise from heuristic-based methods.
+                        </li>
+                     </ul></p>
+
+                     <br><img src="images/CI_image_1.png" style="width:850px;height:auto;" /> <br>
+
+                     <p><b>Step 2: Data Representation </b></p>
+                     <p><ul>
+                        <li> The researchers employ GraphCodeBERT, a tool designed to capture both the syntactic 
+                           and semantic information of code. GraphCodeBERT uses a graph-guided masked attention function 
+                           to incorporate the code structure, enabling a comprehensive representation of code snippets.
+                        </li>
+                        <li> The process of data representation begins with tokenization and encoding using the 
+                           pre-trained GraphCodeBERT tokenizer. The token sequence is truncated to comply with the model's maximum length. 
+                           Batch encoding generates input_ids, representing the tokens numerically for the model.
+                        </li>
+                        <li>
+                           To obtain the embeddings, the encoded input is passed through GraphCodeBERT's 12 hidden layers, 
+                           generating individual token embeddings based on the surrounding context. The mean pooling technique
+                            is applied to obtain a condensed representation of the token sequence, resulting in a 768-dimensional feature vector for each input sample.
+                        </li>
+                     </ul></p>
+
+                     <br><img src="images/CI_image_2.png" style="width:500px;height:auto;" /> <br>
+
+                     <p><b>Step 3: Model Training and Classification </b></p>
+                     <p><ul>
+                        <li><b>Autoencoder</b>: A three-layer autoencoder model is trained to extract latent features from the embeddings 
+                           generated by GraphCodeBERT, ultimately reducing the input dimension to 128. The autoencoder is trained on 70% of the dataset, 
+                           where Mean Square error is utilized to access the reconstruction loss during the training process.
+                        </li>
+                        <li> <b>Binary Classifier</b>: The encoder component of the trained autoencoder is employed as a feature extractor for the 
+                           Random Forest and neural network-based classifiers. The researchers opt for the Random Forest classifier due to its effectiveness 
+                           in handling non-linear relationships and its ability to handle various software engineering tasks effectively. GridSearchCV is used to determine the optimal hyperparameters for the Random Forest classifier.
+                        </li>
+                        <li>
+                           The models are trained and evaluated based on various metrics, including accuracy, precision, recall, and F1 score.
+                        </li>
+                     </ul></p><br>
+
+                     <p><b>Step 4: Experimental Results </b></p>
+                     <p><ul>
+                        <li><b>Comparison to State-of-the-Art</b>: The proposed Random Forest-based model exhibits a 30% 
+                           improvement in F1 score compared to the state-of-the-art. It demonstrates a high precision rate and a reasonably good recall rate of 0.87.
+                        </li>
+                        <li> <b>Effectiveness of Autoencoder</b>: The utilization of autoencoder-encoded representations 
+                           significantly enhances the classification performance, showcasing the efficacy of the feature extraction approach.
+                        </li>
+                     </ul></p>
+                     <br><img src="images/CI_image_3.png" style="width:350px;height:auto;" /> <br>
+                     <br><img src="images/CI_image_4.png" style="width:350px;height:auto;" /> <br>
+
                </section></div>
 
             </div>
