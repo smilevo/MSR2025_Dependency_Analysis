@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Extract Method Research</title>
+    <style>
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			font-family: Arial, sans-serif;
+			font-size: 14px;
+		}
+		th, td {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: left;
+		}
+		th {
+			background-color: #ddd;
+			font-weight: bold;
+		}
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+	</style>
+<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Extract Method Refactoring</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">  
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+
+</head>
+<body>
+<!-- TOP NAV WITH LOGO -->
+      <header>
+         <nav>
+            <div class="line">
+               <div class="s-12 l-2">
+                  <!--<a href="index.html"><img class="s-5 center" src="img/crop.png"></a>-->
+               </div>
+               <div class="top-nav s-12 l-10 right">
+                  <p class="nav-text">Menu</p>
+                  <ul class="right">
+                        <li><a class="home" href="index.html">Home</a></li>
+                        <li><a class="about">Experiment</a></li>
+                        <!--<li><a class="download">Download</a></li>-->
+                        <li><a class="details">Dataset</a></li>
+                        <!--<li><a class="protection">Data Protection</a></li>-->
+                        <!--<li><a class="support">Support</a></li>-->
+                        <!--<li><a class="contribute">Join</a></li>-->
+                        <!--<li><a class="cite">Cite</a></li>-->
+                        <!--<li><a class="publications">Publications</a></li>-->
+                        <!--<li><a class="contact">Contact</a></li>-->
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>
+	<table id="csvTable">
+		<thead>
+			<tr>
+				<th>Row</th>
+                <th>Authors</th>
+                <th>Title</th>
+				<th>Publication Year</th>
+                <th>URL</th>
+				<th>Abstract</th>
+			</tr>
+		</thead>
+		<tbody>
+		</tbody>
+	</table>
+
+	<script>
+		// Read the CSV file using XMLHttpRequest
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if (xhr.readyState === 4 && xhr.status === 200) {
+				// Split the CSV into an array of lines
+				var lines = xhr.responseText.split('\n');
+				// Loop over each line and split it into an array of values
+				for (var i = 0; i < lines.length; i++) {
+					var values = parseCSVLine(lines[i]);
+					// Create a new row in the table
+					var row = document.createElement('tr');
+
+                    //add row number to each cell in first column of table
+                    var cell = document.createElement('td');
+					cell.textContent = i + 1;
+					row.appendChild(cell);
+
+					// Loop over each value and create a new cell in the row
+					for (var j = 0; j < values.length; j++) {
+						var cell = document.createElement('td');
+						cell.textContent = values[j];
+						row.appendChild(cell);
+					}
+					// Add the row to the table body
+					document.querySelector('#csvTable tbody').appendChild(row);
+				}
+			}
+		};
+		xhr.open('GET', 'WebOfScience.csv', true);
+		xhr.send();
+
+		// Helper function to parse a line of CSV data
+		function parseCSVLine(line) {
+			var values = [];
+			var inQuotes = false;
+			var start = 0;
+			for (var i = 0; i < line.length; i++) {
+				if (line[i] === '"') {
+					inQuotes = !inQuotes;
+				} else if (line[i] === ',' && !inQuotes) {
+					values.push(line.substring(start, i).trim());
+					start = i + 1;
+				}
+			}
+			values.push(line.substring(start).trim());
+			return values;
+		}
+	</script>
+</body>
+</html>

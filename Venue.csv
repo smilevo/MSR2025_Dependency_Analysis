@@ -1,0 +1,57 @@
+﻿Symposium on Software Reusability,Conference,Automated method-extraction refactoring by using block-based slicing,1
+International Conference on Software Engineering,Conference,"Breaking the barriers to successful refactoring: Observations and tools for Extract Method, A tool supporting postponable refactoring, TOAD: A tool for recommending auto-refactoring alternatives",3
+Conference on Software Maintenance and Reengineering,Conference,Identification of Extract Method refactoring opportunities,1
+Journal of Systems and Software,Journal,"Identification of Extract Method refactoring opportunities for the decomposition of methods, SPAPE: A semantic-preserving amorphous procedure extraction method for near-miss clones, An automated Extract Method refactoring approach to correct the long method code smell",3
+Asia-Pacific Software Engineering Conference,Conference,"Identifying fragments to be extracted from long methods, An Investigation of the Relationship between Extract Method and Change Metrics: A Case Study of JEdit",2
+Workshop on Refactoring Tools,Workshop,"A visualization method of program dependency graph for identifying Extract Method opportunity, Identifying extract-method refactoring candidates automatically, Fine slicing for advanced method extraction",3
+International Conference on Program Comprehension,Conference,"Recommending automated Extract Method refactorings, REMS: Recommending Extract Method Refactoring Opportunities via Multi-view Representation of Code Property Graph",2
+Agile Processes in Software Engineering and Extreme Programming,Conference,A duplicated code refactoring advisor,1
+Transactions on Software Engineering,Journal,"How does refactoring impact security when improving quality? a security-aware refactoring approach, The effectiveness of supervised machine learning algorithms in predicting software refactoring, Identifying Extract Method refactoring opportunities based on functional relevance",3
+International Conference on Software Quality,Conference,"Deriving Extract Method refactoring suggestions for long methods, Learning to rank extract method refactoring suggestions for long methods",2
+International Symposium on Software Reliability Engineering,Conference,GEMS: An Extract Method refactoring recommender,1
+International Conference on Software Maintenance and Evolution,Conference,Automatic clone recommendation for refactoring based on the present and the past,1
+International Workshop on Refactoring,Workshop,Proactive clone recommendation system for Extract Method refactoring,1
+IEEE Access,Journal,An automatic advisor for refactoring software clones based on machine learning,1
+Symposium on the Foundations of Software Engineering,Conference,Data-driven Extract Method recommendations: A study at ING,1
+Innovations in Software Engineering Conference,Conference,Identifying Extract Method Refactorings,1
+International Conference on Automated Software Engineering,Conference,"LiveRef: a Tool for Live Refactoring Java Code, AntiCopyPaster: Extracting Code Duplicates As Soon As They Are Introduced in the IDE",2
+Information and Software Technology,Journal,"Restructuring programs by tucking statements into functions, Increasing clone maintenance support by unifying clone detection and refactoring activities, Just-in-time code duplicates extraction",3
+Conference on Software: Theory and Practice,Conference,JExtract: An eclipse plug-in for recommending automated Extract Method refactorings,1
+Science of Computer Programming,Journal,Improving the success rate of applying the Extract Method refactoring,1
+International Conference on the Art Science and Engineering of Programming,Conference,A Live Environment to Improve the Refactoring Experience,1
+Computer Software and Applications Conference,Conference,Finding extract method refactoring opportunities by analyzing development history,1
+International Journal of Software Engineering and Knowledge Engineering,Journal,Identification of extract method refactoring opportunities through analysis of variable declarations and uses,1
+International Conference on Software Engineering and Knowledge Engineering,Conference,Identifying Extract Method Opportunities Based on Variable References (S),1
+Automated Software Engineering Journal,Journal,On the documentation of refactoring types,1
+Machine Learning with Applications,Journal,Mining commit messages to enhance software refactorings recommendation: A machine learning approach,1
+Empirical Software Engineering,Journal,Feature requests-based recommendation of software refactorings,1
+International Requirements Engineering Conference,Conference,Automated recommendation of software refactorings based on feature requests,1
+Algorithms,Journal,Comparing commit messages and source code metrics for the prediction refactoring activities,1
+International Conference on Software Analysis Evolution and Reengineering,Conference,Enhancing source code refactoring detection with explanations from commit messages,1
+International Federation for Information Processing,Conference,A C++ Refactoring Browser and Method Extraction,1
+Conference on Object-oriented Programming Systems and Applications,Conference,"An abstract interpretation framework for refactoring with application to extract methods with contracts, Ruby refactoring plug-in for eclipse",2
+IEICE Transactions on Information and Systems,Conference,Refactoring opportunity identification methodology for removing long method smells and improving code analyzability,1
+International Conference on Computer and Communications,Conference,A log-linear probabilistic model for prioritizing extract method refactorings,1
+IASTED Conf. on Software Engineering and Applications,Conference,ARIES: Refactoring support environment based on code clone analysis,1
+ACM SIGSOFT Software Engineering Notes,Conference,ARIES: refactoring support tool for code clone,1
+OOPSLA workshop on Eclipse technology eXchange,Workshop,Star Diagram with Automated Refactorings for Eclipse,1
+International Conference on Product Focused Software Process Improvement,Conference,Refactoring Support Based on Code Clone Analysis,1
+Journal of Software Maintenance and Evolution: Research and Practice,Journal,A metric-based approach to identifying refactoring opportunities for merging code clones in a java software system,1
+International Conference on Soft Computing Techniques and Engineering Application,Conference,Identifying accurate refactoring opportunities using metrics,1
+International Conference on Electrical Engineering/Electronics Computer Telecommunications and Information Technology,Conference,Using software metrics to select refactoring for long method bad smell,1
+International conference on Aspect-oriented software development,Conference,Untangling: a slice extraction refactoring,1
+Conference on software engineering and advanced applications,Conference,Structural quality metrics as indicators of the long method bad smell: An empirical study,1
+Annual Computer Software and Applications Conference,Conference,Tool support for managing clone refactorings to facilitate code review in evolving software,1
+International Conference on Predictive Models and Data Analytics in Software Engineering,Conference,Size and cohesion metrics as indicators of the long method bad smell: An empirical study,1
+Transactions on Software Engineering and Methodology,Journal,Assessing the refactoring of brain methods,1
+International Conference on Software Maintenance,Conference,Refactoring clones: An optimization problem,1
+"Conference on Software Maintenance, Reengineering, and Reverse Engineering",Conference,Unification and refactoring of clones,1
+"Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing",Conference,A study on the method of removing code duplication using code template,1
+International Workshop on Software Clones,Workshop,How to extract differences from similar programs? a cohesion metric approach,2
+International Workshop on Software Clones,Workshop,Extracting code clones for refactoring using combinations of clone metrics,2
+Workshop on Software Evolution through Transformations ,Workshop,An algorithm for detecting and removing clones in java code,1
+Symposium on Principles of Programming Languages,Conference,Semantics-preserving procedure extraction,1
+ACM SIGPLAN workshop on Partial evaluation and program manipulation ,Workshop,Clone detection and elimination for haskell,2
+ACM SIGPLAN workshop on Partial evaluation and program manipulation ,Workshop,Clone detection and removal for erlang/otp within a refactoring environment,2
+Working Conference on Reverse Engineering,Conference,Partial redesign of java software systems based on clone analysis,1
+Seminar on Advanced Techniques Tools for Software Evolution ,Conference,Towards automated refactoring of code clones in object-oriented programming languages,1
