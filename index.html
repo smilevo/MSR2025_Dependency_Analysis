@@ -43,8 +43,9 @@ gtag('config', 'UA-115826132-1');
                         <li><a class="download">Tools</a></li>
                         <li><a class="support">Datasets</a></li>
                         <li><a class="protection">Papers</a></li>
+                        <li><a class="cite">Study Design</a></li>
                         <!-- <li><a class="contribute">Join</a></li> -->
-                        <!-- <li><a class="cite">Cite</a></li> -->
+
                         <!-- <li><a class="publications">Additions</a></li> -->
                         <li><a class="contact">Contact</a></li>
                   </ul>
@@ -66,8 +67,9 @@ gtag('config', 'UA-115826132-1');
                         <li><a class="download">Download Tools</a></li>
                         <li><a class="support">Download Datasets</a></li>
                         <li><a class="protection">Paper Reviews</a></li>
+                        <li><a class="cite">Study Design</a></li>
                         <!-- <li><a class="contribute">Join the EMRP</a></li> -->
-                        <!-- <li><a class="cite">Citation Summary</a></li> -->
+
                         <!-- <li><a class="publications">Request for Additions</a></li> -->
                         <li><a class="contact">Contact</a></li>
                         <!--<li>-->
@@ -115,6 +117,25 @@ gtag('config', 'UA-115826132-1');
                   </p><br>
                </section>
                </div>
+
+               <!-- <div id="home">
+                  <section class="s-12 l-6">
+                     <h3>Welcome</h3>
+                     <p>
+                        This website is for the Extract Method Refactoring Datasets Survey (EMRS).
+                     </p><br>
+                     <p>
+                        EMRS is an open source dataset of extract method refactoring intended for supporting software engineering researchers and practitioners.
+                        For each case in EMRS, we provide summary, tools, dataset and original papers for extract method refactoring techniques.
+                        EMRS currently provides studies for <b>83 refactoring methods</b>.
+                     </p><br>
+                     <p>
+                        Here you can find useful information, such as understand the <a href="#details" class="details">survey </a>conducted. And download the  
+                        <a href="#download" class="download">tools</a>, and 
+                        <a href="#support" class="support">datasets</a>. 
+                     </p><br>
+                  </section>
+                  </div> -->
 
                <div id="about">
                <section class="s-12 l-6">
@@ -1330,9 +1351,74 @@ gtag('config', 'UA-115826132-1');
                <section class="s-12 l-8">
                   <h3>Study Summary</h3>
                   <p>
-                     EMRP contains data for multiple Extract refactoring techniques. The following table summarizes the study details for the data utilized by each project.
-                     Each research paper's approach methodology, type of data, decision metrics, and evaluation metrics are detailed below.  
+                     EMRS contains a study for multiple Extract refactoring techniques. The literature study, experiments and table below summarizes the study details of this project.
                   </p><br>
+
+                  <h5>Behind the Intent of Extract Method Refactoring: A Systematic Literature Review</h5><br>
+                  <p><b>Aim:</b> In this paper, we aim to review the current body of knowledge on existing Extract Method refactoring research and explore
+                  their limitations and potential improvement opportunities for future research efforts. That is, the Extract Method is considered one of the
+                  most widely-used refactorings, but difficult to apply in practice as it involves low-level code changes such as statements, variables,
+                  parameters, return types, etc. Hence, researchers and practitioners begin to be aware of the state-of-the-art and identify new research
+                  opportunities in this context. <br></p><br>
+
+                  <p><b>Method:</b> We review the body of knowledge related to Extract Method refactoring in the form of a systematic literature review (SLR).
+                  After compiling an initial pool of 1,367 papers, we conducted a systematic selection, and our final pool included 83 primary studies. We
+                  define three sets of research questions and systematically develop and refine a classification schema based on several criteria
+                  including their methodology, applicability, as their degree of automation.</p><br>
+
+                  <p><b>Results:</b> The results construct a catalog of 83 Extract Method approaches indicating that several techniques have been proposed in
+                  the literature. Our results show that: (i) 38.6% of Extract Method refactoring studies primarily focus on addressing code clones; (ii)
+                  Several of the Extract Method tools incorporate the developer’s involvement in the decision-making process when applying the method
+                  extraction, and (iii) these existing benchmarks are heterogeneous and do not contain the same type of information, making
+                  standardizing them for the purpose of benchmarking difficult.</p><br>
+
+                  <p><b>Conclusions:</b> Our study serves as an “index” to the body of knowledge in this area for researchers and practitioners in determining the
+                  Extract Method refactoring approach that is most appropriate for their needs. Our findings also empower the community with
+                  information to guide future refactoring tool development.</p><br>
+
+                <p>We drive our study using the following research questions:<br>
+                  <b>RQ1:</b> What approaches were considered by the PSs to recommend Extract Method refactoring?<br>
+                  <b>RQ2:</b> What are the main characteristics of Extract Method recommendation tools?<br>
+                  <b>RQ3:</b> What are the datasets, and benchmarks used for evaluating and validating Extract Method recommendation tools?</p><br>
+                  
+                  <h5>Research Questions and Findings</h5><br>
+                  <p><b><a href="https://anonymousresearchersubmission.github.io/esem2023/Approach.html" target="_blank">RQ1. What approaches were considered by the PSs to recommend Extract Method refactoring?</a></p></b>
+                  <p>Figure below of the sankey diagram provides detailed mappings between our three dimensions. Separation of Concerns is the most popular 
+                     intent driving method extraction, followed up with Long Method, and finally Code Clone. Interestingly, this is not being 
+                     matched in terms of the toolset, as the highest ratio of tools goes to Long Method with 41.2%, then equally between Code Clone 
+                     and Separation of Concerns with 29.4%. Such observation has caught our attention particularly as Separation of Concerns is the 
+                     only category that relies on all existing detection techniques and has its own unique one,i.e., Evolutionary-based, and yet, 
+                     there is a lack of concretizing this amount of research into practical tools. As for Detection, it is no surprise that 
+                     rule-based techniques are the most popular in identifying need-to-refactor code fragments. This is being inherited from how 
+                     research couples refactoring to a natural response to code smells, e.g., Long Method.</p>
+
+                  <br><img src="images/Sankay.png" style="width:900px;height:auto;" /><br>
+                  
+                  <p><b><a href="https://anonymousresearchersubmission.github.io/esem2023/Tool.html" target="_blank">RQ2. What are the main characteristics of Extract Method recommendation tools?</a></p></b> 
+                  <p>To help select an appropriate Extract Method refactoring tool, we report the following main characteristics that 
+                     can be considered to make an informed decision abouttools usage:</p>   
+                        <p><ul>
+                        <li><b>Language:</b> Indicates the programming language the tool supports.</li>
+                        <li><b>Intent:</b> Indicates the context in which the tool can be used. </li>
+                        <li><b>Number of Metrics:</b> Indicates the number of software metrics used by the tool.</li>
+                        <li><b>Interface:</b> Indicates what IDE the tool supports.</li>                      
+                        <li><b>Usage Guide?:</b> Indicates the availability of instructions on how to use the tool.</li>
+                        <li><b>Tool Link:</b> Indicates to the online source code repository.</li>
+                        <li><b>Last Update:</b> Indicates whether the tool has been consistently updated/maintained since its development</li>
+                        </ul></p>
+                  <br><img src="images/Timeline.png" style="width:900px;height:auto;" /><br>
+               
+                  <p><b><a href="https://anonymousresearchersubmission.github.io/esem2023/Tool.html" target="_blank">RQ3. What are the datasets, and benchmarks used for evaluating and validating Extract Method recommendation tools?</a></p></b> 
+                  <p>Out of the 83 primary studies analyzed, almost 78% of the datasets are unavailable to the public, with only 22% available online, which means there is a
+                  lack of online datasets for the Extract Method refactoring research. Primary studies have mostly employed small or
+                  medium-scale open-source applications, often developed using Java, typically containing less than 225,000 lines of
+                  code. These dataset are heterogeneous and do not contain the same type of information, making standardizing them
+                  for the purpose of benchmarking difficult.
+                  </p> <br>    
+
+                  <h5>Table analysis</h5><br>
+
+                  <p> Each research paper's approach methodology, type of data, decision metrics, and evaluation metrics are detailed below:</p><br>
                   <style type="text/css">
                      .tg  {border-collapse:collapse;border-spacing:0;}
                      .tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 10px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:black;}
@@ -2534,28 +2620,33 @@ gtag('config', 'UA-115826132-1');
 
                <div id="cite">
                <section class="s-12 l-6">
-                  <h3>Cite CROP</h3>
+                  <h4>Data Collection</h4>
+               
                   <p>
-                  If you want to cite CROP in your research paper, please use the following:
-                  </p><br>
-                  <h4>Bibtex</h4>
-                  <p>
-                  @inproceedings{Paixao2018,<br>
-                  author = {Paixao, Matheus and Krinke, Jens and Han, DongGyun and Harman, Mark},<br>
-                  title = {CROP: Linking Code Reviews to Source Code Changes},<br>
-                  booktitle = {International Conference on Mining Software Repositories},<br>
-                  series = {MSR},<br>
-                  year = {2018},<br>
-                  }
-                  </p><br>
-                  <h4>Formatted Citation</h4>
-                  <p>
-                  Matheus Paixao, Jens Krinke, DongGyun Han, and Mark Harman. 2018. CROP:
-                  Linking Code Reviews to Source Code Changes. In International Conference on
-                  Mining Software Repositories (MSR).
-                  </p><br>
+                   <ul>
+                      <li><a href="https://anonymousresearchersubmission.github.io/esem2023/ScienceDirect.html" target="_blank">ScienceDirect</a></li>
+                      <li><a href="https://anonymousresearchersubmission.github.io/esem2023/Scopus.html" target="_blank">Scopus</a></li>
+                      <li><a href="https://anonymousresearchersubmission.github.io/esem2023/Springer.html" target="_blank">Springer Link</a></li>
+                      <li><a href="https://anonymousresearchersubmission.github.io/esem2023/WebOfScience.html" target="_blank">Web of Science</a></li>
+                      <li><a href="https://anonymousresearchersubmission.github.io/esem2023/ACM.html">ACM Digital Library</a></li>
+                      <li><a href="https://anonymousresearchersubmission.github.io/esem2023/IEEE.html" target="_blank">IEEE Xplore</a></li>
+                     <li><a href="https://anonymousresearchersubmission.github.io/esem2023/Wiely.html" target="_blank">Wiely</a></li>
+                  </ul></p>
+
+                  <h4>Final Set</h4>
+                  <ul><li><p><a href="#protection" class="protection">Final set of articles (Summary)</a></p></li></ul><br>
+                  
+                  
+                  <h4>Venues</h4>
+                  <ul><li><p><a href="https://anonymousresearchersubmission.github.io/esem2023/Venue.html" target="_blank">Publication Venues</a></p></li></ul><br>
+
+                  <p></p>
+                  <h4>Manual Classification</h4>
+                  <ul><li><p><a href="https://docs.google.com/spreadsheets/d/1jG2dTG5nV_MjQkEaYzM_qLIgvBdG4FKVxRyrCXMC7bo/edit?usp=sharing" target="_blank">Primary Studies Classification</a></p></li></ul><br>
                </section>
                </div>
+
+               
 
                <div id="publications">
                <section class="s-12 l-6">
